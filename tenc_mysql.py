@@ -1,9 +1,11 @@
 #encoding=utf-8
 from MySQLdb import connect
 
-from tencent import tenc
+from ten import tenc
 
-
+'''
+创建一个mysql数据库
+'''
 def tencen_mysql():
     try:
         conn = connect(host="localhost",port=3306,db="tencent",user="root",passwd="123456")
@@ -36,7 +38,7 @@ def tencent_add():
             conn = connect(host="localhost", port=3306, db="tencent", user="root", passwd="123456")
 
             cursor = conn.cursor()
-            #插入sql
+            #插入sql（这个sql一开始我还不会写。。。）
             sql = "insert into tencent(id,position,location,publishttime,details) VALUES (0,'"+each[0]+"','"+each[1]+"','"+each[2]+"','"+each[3]+"')"
 
             #print(sql)

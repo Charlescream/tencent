@@ -1,7 +1,7 @@
 #encoding=utf-8
 from pymongo import *
 
-from tencent import tenc
+from ten import tenc
 
 
 def setup_mongo():
